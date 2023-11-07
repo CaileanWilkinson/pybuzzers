@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pybuzzers"
-version = "1.0.2"
+version = "1.0.3"
 authors = [
     { name = "Cailean Wilkinson", email = "cjw27@st-andrews.ac.uk" },
 ]

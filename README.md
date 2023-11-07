@@ -5,6 +5,8 @@ Available on PyPi at https://pypi.org/project/pybuzzers/
 
 Install via pip with `pip3 install pybuzzers`
 
+**Requires** [hidapi](https://pypi.org/project/hidapi/)
+
 ## Usage (The `BuzzerSet` class)
 Each connected Buzz! set is interfaced through an instance of the `BuzzerSet` class. Note that the USB interface to the Buzz! set is 'owned' by this instance, and so only one instance can exist per attached Buzz! set. Attempting to create a new instance for a set that already exists will return a reference to the existing instance instead.
 
