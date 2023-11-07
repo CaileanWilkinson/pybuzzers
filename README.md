@@ -1,7 +1,7 @@
 # `pybuzzers` - Event-driven Python package for interfacing with Sony Buzz! buzzer sets.
 
 ## Installation
-Available on PyPi at https://pypi.org/project/pybuzzers/1.0.0/
+Available on PyPi at https://pypi.org/project/pybuzzers/
 
 Install via pip with `pip3 install pybuzzers`
 
