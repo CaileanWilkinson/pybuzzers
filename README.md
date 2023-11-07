@@ -41,7 +41,7 @@ The background thread can be launched using `.start_listening()` and stopped usi
 
 To respond to button presses, you must register event handlers with the `BuzzerSet` instance through the `.on_change`, `.on_buzz`, `.on_button_down`, and `.on_button_up` methods. Each of these methods takes as input a function to be called whenever the event fires, and an optional label to be used to identify the handler. Multiple handlers can be registered for each event type, and all will be called in sequence when the event fires. These events are:
 
-##### `.on_change(handler: Callable[["BuzzerSet", list[list[bool]]], None], label: Optional[str] = None) -> str`
+#### `.on_change(handler: Callable[["BuzzerSet", list[list[bool]]], None], label: Optional[str] = None) -> str`
 Called every time the button state changes. Handler must be function of the form
 
     f(buzzer_set: BuzzerSet, state: list[list[bool]])
