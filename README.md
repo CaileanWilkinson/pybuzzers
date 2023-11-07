@@ -71,7 +71,7 @@ Called every time a red Buzz button is pressed. Handler must be function of the 
 
 where `buzzer` is the index of the buzzer in the set of 4.
 
-**Important note:** Event handler functions will be called in the background thread, which has a number of implications. You must ensure that event handlers act in a thread-safe way when they use variables also used by the main thread. Event handlers also block the background thread (meaning further events cannot be listened for) while they run, so should be kept short. Long-running responses to events should be further delegated to a different thread.
+**Important note:** Event handler functions will be called in the background thread. You must ensure that event handlers act in a thread-safe way when they use variables also used by the main thread. Event handlers also block the background thread (meaning further events cannot be listened for) while they run, so should be kept short. Long-running responses to events should be further delegated to a different thread.
 
 You can remove and event handler by passing its label to the `.remove_handler(label: str)` method, or remove all handlers with the `.clear_handlers()` method.
 
