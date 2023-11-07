@@ -52,7 +52,7 @@ Called every time a button is pressed (including red Buzz button) . Handler must
 
     f(buzzer_set: BuzzerSet, buzzer: int, button: int)
 
-where `buzzer` is the index of the buzzer in the set of 4, and `button` is the index of the button on the buzzer, counting down from the top. See [Button Constants](#button-constants).
+where `buzzer` is the index of the buzzer in the set of 4, and `button` is the index of the button on the buzzer, counting down from the top. See [Buzzer buttons](#buzzer-buttons).
 
 #### `.on_button_up(handler: Callable[["BuzzerSet", int, int], None], label: Optional[str] = None) -> str`
 
@@ -60,7 +60,7 @@ Called every time a button (including red Buzz button) is released. Handler must
 
     f(buzzer_set: BuzzerSet, buzzer: int, button: int)
 
-where `buzzer` is the index of the buzzer in the set of 4, and `button` is the index of the button on the buzzer, counting down from the top. See [Button Constants](#button-constants).
+where `buzzer` is the index of the buzzer in the set of 4, and `button` is the index of the button on the buzzer, counting down from the top. See [Buzzer buttons](#buzzer-buttons).
 
 #### `.on_buzz(handler: Callable[["BuzzerSet", int], None], label: Optional[str] = None)`
 Called every time a red Buzz button is pressed. Handler must be function of the form 
