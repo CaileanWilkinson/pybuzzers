@@ -196,6 +196,7 @@ class BuzzerSet:
         """
         while True:
             try:
+                # Do not use __interface_lock as we want this to fail when the interface is closed in the main thread.
                 data = self.__interface.read(64)
                 new_state = BuzzerSet.__decode_state(data)
                 self.__handle_event(new_state)
