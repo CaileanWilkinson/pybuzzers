@@ -185,6 +185,7 @@ class BuzzerSet:
         # This will trigger the break in __listen_loop to finish the thread
         with self.__interface_lock:
             self.__interface.close()
+            self.__interface = hid.device()
             self.__interface.open_path(self.path)
     
     def __listen_loop(self):
