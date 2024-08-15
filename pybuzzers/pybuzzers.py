@@ -7,7 +7,7 @@ BLUE = 1
 ORANGE = 2
 GREEN = 3
 YELLOW = 4
-COLOUR = {RED: "Red", BLUE: "Blue", ORANGE: "Orange", GREEN: "Green", YELLOW: "Yellow"}
+COLOUR = {RED: "Buzz!", BLUE: "Blue", ORANGE: "Orange", GREEN: "Green", YELLOW: "Yellow"}
 
 
 def list_connected_buzzers() -> list[dict]:
