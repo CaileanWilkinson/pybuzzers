@@ -32,6 +32,9 @@ Buttons are numbered `0 -> 4` from top to bottom. Convenience constants
 
 Dictionary `COLOUR: {int, str}` maps in reverse from the button index to a string describing the button colour.
 
+Dictionary `BUTTONLABEL: {int, str}` maps in reverse from the button index to a string labelling the button. 
+Identical to `COLOUR` except `RED` is labelled as "Buzz!" to match the button description.
+
 The current state of the buttons can be queried with the `.get_buttons_state()` method. The state is returned as a 2-d list of booleans, where the `(i,j)` element of the list represents the state of the `j`th button in the `i`th buzzer. `True` indicates button is currently pressed down, `False` indicates button is currently released.
 
 ### Responding to button presses 

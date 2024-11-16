@@ -8,7 +8,7 @@ ORANGE = 2
 GREEN = 3
 YELLOW = 4
 COLOUR = {RED: "Red", BLUE: "Blue", ORANGE: "Orange", GREEN: "Green", YELLOW: "Yellow"}
-
+BUTTONLABEL = {RED: "Buzz!", BLUE: "Blue", ORANGE: "Orange", GREEN: "Green", YELLOW: "Yellow"}
 
 def list_connected_buzzers() -> list[dict]:
     """Return details for all connected Buzz! devices, without opening them."""
